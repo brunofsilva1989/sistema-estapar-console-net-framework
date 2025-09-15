@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B19738BE-11CD-4483-9E77-81EDD65AC6BE}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>SistemaEstapar</RootNamespace>
-    <AssemblyName>SistemaEstapar</AssemblyName>
+    <ProjectGuid>{DCAB1C1A-B655-4574-96AF-835EFE30F0F9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SistemaEstapar.DataAccess</RootNamespace>
+    <AssemblyName>SistemaEstapar.DataAccess</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,17 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Entradas.cs" />
-    <Compile Include="Models\Estacionamento.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Data\EstacionamentoDb.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Models\Veiculo.cs" />
+    <Compile Include="Respositorios\EstacionamentoRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Service\" />
+    <ProjectReference Include="..\SistemaEstapar.Teste\SistemaEstapar.Domain.csproj">
+      <Project>{825decea-7987-491c-a070-5d8da697539f}</Project>
+      <Name>SistemaEstapar.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemaEstapar
+namespace SistemaEstapar.Domain.Entidades
 {
     public class Entradas
     {

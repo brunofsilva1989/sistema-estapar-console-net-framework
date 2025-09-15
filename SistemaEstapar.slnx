@@ -1,3 +1,6 @@
 <Solution>
-  <Project Path="SistemaEstapar/SistemaEstapar.csproj" Id="b19738be-11cd-4483-9e77-81edd65ac6be" />
+  <Project Path="SistemaEstapar.DataAccess/SistemaEstapar.DataAccess.csproj" Id="dcab1c1a-b655-4574-96af-835efe30f0f9" />
+  <Project Path="SistemaEstapar.Teste/SistemaEstapar.Domain.csproj" Id="825decea-7987-491c-a070-5d8da697539f" />
+  <Project Path="SistemaEstapar.Testee/SistemaEstapar.Business.csproj" Id="2d973f3c-88cd-4f73-93ce-025ff71b2f97" />
+  <Project Path="SistemaEstapar/SistemaEstapar.ConsoleApp.csproj" Id="b19738be-11cd-4483-9e77-81edd65ac6be" />
 </Solution>
